@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 .container-contact {
     display: inline-block;
     position: relative;
@@ -7,11 +10,10 @@
     overflow: hidden;
 }
 .title-box-country{
-    font-family: Merriweather;
     color: #ffa800;
-    font-size: 25px; /* Приближение из-за подстановки шрифтов */
+    font-size: 25px;
     font-weight: 700;
-    line-height: 23px; /* Приближение из-за подстановки шрифтов */
+    line-height: 23px; 
     text-align: center;
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
@@ -91,11 +93,6 @@
     width: 100%;
     height: 100%;
     z-index: 5;
-    /*-webkit-transition: all 1s;*/
-    /*-moz-transition: all 1s;*/
-    /*-ms-transition: all 1s;*/
-    /*-o-transition: all 1s;*/
-    /*transition: all 1s;*/
 }
 .all-country {
     background: #fff;
@@ -106,7 +103,6 @@
     max-width: 630px;
     height: 382px;
     margin-right: 0;
-    /*float: left;*/
     -webkit-transition: max-width 1s ease-out 1.3s;
     -moz-transition: max-width 1s ease-out 1.3s;
     -ms-transition: max-width 1s ease-out 1.3s;
@@ -115,7 +111,6 @@
     overflow: hidden;
 }
 .all-country.small-block-active {
-    /* min-width: inherit; */
     max-width: 308px;
     margin-right: 690px;
     -webkit-transition: all 0.8s cubic-bezier(0.39, 0.35, 0.65, 0.65) 1s;
@@ -127,8 +122,12 @@
 }
 .wrapp-contact-content {
     text-align: center;
-    position: relative;
+    position: relative !important;
     z-index: 10;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
 }
 .item-country:before {
     position: absolute;
@@ -168,13 +167,6 @@
     -o-transition: all 0.3s cubic-bezier(0.39, 0.35, 0.65, 0.65) 0s;
     transition: all 0.3s cubic-bezier(0.39, 0.35, 0.65, 0.65) 0s;
 }
-/*.item-country {*/
-    /*text-align: left;*/
-    /*padding-left: 35px;*/
-    /*height: 33px;*/
-    /*line-height: 33px;*/
-    /*position: relative;*/
-/*}*/
 .item-country {
     text-align: left;
     padding-left: 90px;
@@ -182,9 +174,6 @@
     line-height: 33px;
     position: relative;
     width: 50%;
-}
-.item-country.event {
-    /*padding-left: 90px;*/
 }
 .item-country.animate-left {
     padding-left: 60px;
@@ -234,26 +223,15 @@
     height: 100%;
 }
 .wrap-country-addres {
-    /* min-width: 300px; */
     float: left;
     position: relative;
     z-index: 5;
 }
-.phone-img-box {
-    float: right;
-    position: absolute;
-    right: 0;
-    z-index: 0;
-}
-.addres-country-wrapp-all {
-    width: 700px;
-}
 .title-country-addres{
-    font-family: Merriweather;
     color: #ffa800;
-    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-size: 16px;
     font-weight: 700;
-    line-height: 23px; /* Приближение из-за подстановки шрифтов */
+    line-height: 23px;
     text-align: left;
 }
 .addres-country-wrapp-all {
@@ -277,7 +255,6 @@
 }
 .item-addres-country p.addres-box-title {
     color: rgba(63, 86, 118, 1);
-    font-family: Merriweather;
     font-size: 16px;
     font-weight: 700;
     line-height: 13px;
@@ -302,7 +279,6 @@
     list-style: none;
     margin: 0 5px 10px;
     opacity: 0;
-    /*overflow: hidden;*/
     width: 108px;
     height: 108px;
     position: relative;
@@ -330,7 +306,6 @@ a.directly-link:focus, a.directly-link:hover{
     color: rgba(63, 86, 118, 1);
 }
 .directly-link {
-    font-family: Merriweather;
     color: rgba(63, 86, 118, 1);
     font-size: 13px;
     font-weight: 700;
@@ -371,7 +346,6 @@ a.directly-link:focus, a.directly-link:hover{
     background: rgba(63, 86, 118, .8);
     padding: 10px 10px;
     border-radius: 5px;
-    /* font-weight: normal; */
     display: block;
     line-height: 13px;
 }
